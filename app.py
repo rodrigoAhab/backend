@@ -23,7 +23,7 @@ app.config['JWT_REFRESH_TOKEN_EXPIRES']=timedelta(days=1)
 
 jwt=JWTManager(app)
 
-cors = CORS(app, resources={r"/*": {"origins": "http://localhost:5433"}})
+cors = CORS(app, resources={r"/*": {"origins": "http://localhost:4200"}})
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_CONNECTION
 
 db.init_app(app)
